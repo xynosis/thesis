@@ -1,0 +1,59 @@
+% ******************************* NUTT PhD Thesis Template **************************
+
+% Please have a look at the README.md file for info on how to use the template
+
+\documentclass[a4paper,12pt,times,twoside,print,custommargin,authoryear,PageStyleII]{PhDThesisPSnPDF}
+
+% ********************************** Preamble **********************************
+
+\input{preamble}
+
+% ********************************* Meta ********************************
+
+\input{meta}
+
+% ******************************** Front Matter ********************************
+\begin{document}
+
+\frontmatter
+
+\maketitle
+
+% \include{Content/00_Abstract}
+% \include{Content/00_Declaration}
+% \include{Content/00_Dedication}
+
+% *********************** Adding TOC and List of Figures ***********************
+
+% \tableofcontents
+% \listoffigures
+% \listoftables
+% \printnomenclature
+
+% ******************************** Main Matter *********************************
+
+\mainmatter
+\setlength{\parskip}{1em}
+% \include{Chapters/01_Introduction}
+% \include{Chapters/04_Relationships}
+\include{Chapters/05_DemVR}
+
+% \begin{appendices} 
+
+% \include{Content/99_Appendix}
+
+% \end{appendices}
+
+% ********************************** References ******************************
+
+\begin{spacing}{0.9}
+\bibliographystyle{apalike}
+\cleardoublepage
+\bibliography{References/references}
+\end{spacing}
+
+
+% *************************************** Index ********************************
+\printthesisindex
+
+\end{document}
