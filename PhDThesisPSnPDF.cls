@@ -985,6 +985,24 @@ wish to left align your text}
 \chapter*{\centering \normalfont\fontsize{14}{15}\bfseries Dedication}
 \thispagestyle{empty}
 }
+% ********************************* Publications *********************************
+% The publications environment makes sure publications get their
+% own page, centered
+
+\newenvironment{publication}
+{
+\chapter*{\centering \normalfont\fontsize{14}{15}\bfseries Contributions and publications}
+\thispagestyle{empty}
+}
+% ********************************* COVID-19 Impact Statement *********************************
+% The COVID-19 Impact Statement environment makes sure the COVID-19 Impact Statement gets its
+% own page, centered
+
+\newenvironment{covid}
+{
+\chapter*{\centering \normalfont\fontsize{14}{15}\bfseries COVID-19 Impact Statement}
+\thispagestyle{empty}
+}
 
 
 
