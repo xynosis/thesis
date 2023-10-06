@@ -933,39 +933,45 @@ wish to left align your text}
 \begin{center}
 
 % Title
+\topskip0pt
+\vspace*{\fill}
 {\usebox{\PHD@Title}} % subtitle is defined
 
-% Logo
-
-	\vspace{.25\PHD@titlepagespacing}
-	{\usebox{\PHD@crest}}
-	\vspace{.15\PHD@titlepagespacing}
 
 
 % Author
+
+\vspace{.15\PHD@titlepagespacing}
 {\usebox{\PHD@author}}
-\vspace*{2em}
+\vspace{.15\PHD@titlepagespacing}
+% \vspace*{2em}
 
-% Supervisor
-\ifPHD@supervisor%
-{\usebox{\PHD@supervisor}}
-\vspace*{0.5em}
-\fi
+% % Supervisor
+% \ifPHD@supervisor%
+% {\usebox{\PHD@supervisor}}
+% \vspace*{0.5em}
+% \fi
 
-% Advisor
-\ifPHD@advisor%
-{\usebox{\PHD@advisor}}
-\vspace*{0.5em}
-\fi
+% % Advisor
+% \ifPHD@advisor%
+% {\usebox{\PHD@advisor}}
+% \vspace*{0.5em}
+% \fi
 
 % Department and University
 {\usebox{\PHD@dept}}
-\vspace{2em}
+\vspace{.15\PHD@titlepagespacing}
+
 
 % Submission Text
 {\usebox{\PHD@submission}}
-\vspace{2em}
+\vspace{.20\PHD@titlepagespacing}
 
+
+% Logo
+
+	{\usebox{\PHD@crest}}
+	% \vspace{.15\PHD@titlepagespacing}
 
 % College and degree date
 \vfill
